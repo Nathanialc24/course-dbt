@@ -1,0 +1,24 @@
+
+version: 2
+
+models:
+  - name: stg_addresses
+    description: "table with address information"
+
+  - name: stg_events
+    description: "table with event information"
+    
+  - name: stg_order_items
+    description: "table with order items information"
+
+  - name: stg_orders
+    description: "table with orders information"
+
+  - name: stg_products
+    description: "table with products information"
+
+  - name: stg_promis
+    description: "table with orders promos"
+
+  - name: stg_products
+    description: "table with products users"
