@@ -7,3 +7,8 @@ Template repository for the projects and environment of the course: Analytics en
 ## License
 
 Apache 2.0
+
+
+**Week 1 projec**t - 
+
+For some reason I was unable to get the local BI tool to run, it would show up briefly, then stall out. Unsure if this is due to my laptop or not. So i couldn't asnwer the questions for this week unfortunately. I think I created all the models properly though.
