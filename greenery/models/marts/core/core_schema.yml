@@ -1,0 +1,29 @@
+version: 2
+
+models:
+  - name: dim_products
+    description: ''
+    columns:
+      - name: product_id
+        description: "The PK for the product model"
+        tests:
+          - unique
+          - not_null
+
+  - name: dim_users
+    description: ''
+    columns:
+      - name: user_id
+        description: "The PK for the user model"
+        tests:
+          - unique
+          - not_null
+
+  - name: fact_orders
+    description: ''
+    columns:
+      - name: order_id
+        description: "The PK for order model, which is base table for join"
+        tests:
+          - unique
+          - not_null

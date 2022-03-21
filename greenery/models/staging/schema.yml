@@ -17,8 +17,8 @@ models:
   - name: stg_products
     description: "table with products information"
 
-  - name: stg_promis
-    description: "table with orders promos"
+  - name: stg_promos
+    description: "table with promos information"
 
-  - name: stg_products
-    description: "table with products users"
+  - name: stg_users
+    description: "table with users information"

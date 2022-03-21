@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: user_order_facts
+    description: ''
+    columns:
+      - name: user_id
+        description: "PK for user table"
+        tests:
+          - unique
+          - not_null
+
+      - name: tracking_id
+        description: "Tracking id for each unique order"
+        tests:
+          - unique
+          - not_null
