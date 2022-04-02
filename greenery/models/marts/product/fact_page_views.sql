@@ -6,15 +6,13 @@
 
 with events as (
     
-    select *
-    from {{ ref('stg_events') }}
+    select * from {{ ref('stg_events') }}
 
 )
 
 , users as (
     
-    select *
-    from {{ ref('stg_users') }}
+    select * from {{ ref('stg_users') }}
 
 )
 

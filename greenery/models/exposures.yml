@@ -1,0 +1,16 @@
+version: 2
+
+exposures:
+
+  - name: Product Funnel Dashboard
+    description: >
+      Models that are critical to our product funnel dashboard
+    type: dashboard
+    maturity: high
+
+    owner:
+      name: Nathanial Carter
+      email: Nathanial@greenery.co
+      
+    depends_on:
+      - ref('fct_product_funnel')
