@@ -34,5 +34,14 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   greenery:
     # Config indicated by + and applies to all files under models/example/
-    example:
+    staging:
       +materialized: view
+    mart:
+      +materialized: table
+      ## aplies this post hook macro to the greenery model, every table the model creates the reporting role can do select work
+  post-hook:
+    - "GRANT SELECT ON {{ this }} TO reporting"
+
+#for every schema
+on-run-end: 
+  - "GRANT USAGE ON ALL SEQUENCES IN SCHEMA dbt_nathan_c TO reporting "
